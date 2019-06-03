@@ -4,7 +4,7 @@
   "description": "Landing page for musinside",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/SandraCGarcia/musinside-web#readme",
   "dependencies": {
-    "jquery": "^3.4.1",
-    "node-jquery": "^0.1.0",
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "live-server": "^1.2.1",
     "node-sass": "^4.12.0"
   }
 }
