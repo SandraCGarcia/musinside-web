@@ -1,0 +1,24 @@
+{
+  "name": "musinside",
+  "version": "1.0.0",
+  "description": "Landing page for musinside",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SandraCGarcia/musinside-web.git"
+  },
+  "author": "Sandra Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SandraCGarcia/musinside-web/issues"
+  },
+  "homepage": "https://github.com/SandraCGarcia/musinside-web#readme",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "node-jquery": "^0.1.0",
+    "node-sass": "^4.12.0"
+  }
+}
