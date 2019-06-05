@@ -9,12 +9,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7px;
-  color: #777;
-  padding: 30px; }
+  box-sizing: border-box; }
 
 @keyframes moveInLeft {
   0% {
@@ -44,21 +39,36 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-/*
-COLORS:
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7px;
+  color: #777;
+  padding: 30px; }
 
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-Pink: #FF416C;
-Orange: #FF4B2B;
-Pink 2: rgba(255, 29, 82, 0.8), 
-Blue: rgba(2, 122, 143, 0.8),
-Lime: rgba(0, 255, 115, 0.8), 
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 60px; }
+  .heading-primary--main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    height: 70px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation: moveInRight 1s ease-out; }
 
-*/
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 28px 40px;
@@ -79,10 +89,10 @@ Lime: rgba(0, 255, 115, 0.8),
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777; }
-  .btn-white::after {
+  .btn--white::after {
     background-color: #fff; }
 
 .btn:after {
@@ -97,54 +107,36 @@ Lime: rgba(0, 255, 115, 0.8),
   z-index: -1;
   transition: all .4s; }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 1s ease-out .75s;
   /*animation: name duration timing-function delay;*/
   animation-fill-mode: backwards; }
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(255, 29, 82, 0.8), rgba(2, 122, 143, 0.8)), url("../img/concert-hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(119, 119, 119, 0.9)), url("../img/concert-hero-corta.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
+  .header__logo {
+    height: 35px; }
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
-.logo-box {
-  position: absolute;
-  top: 40px;
-  left: 40px; }
-
-.logo {
-  height: 35px; }
-
-.text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 60px; }
-
-.heading-primary-main {
-  display: block;
-  font-size: 60px;
-  font-weight: 400;
-  letter-spacing: 35px;
-  height: 70px;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
-
-.heading-primary-sub {
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 17.4px;
-  animation: moveInRight 1s ease-out; }
+.row {
+  max-width: 114rem;
+  width: 0 auto;
+  background-color: #eee;
+  margin-bottom: 8rem; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
