@@ -32,3 +32,13 @@ body{
     }
 }
 
+.heading-secundary{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(to right, #FF4B2B, rgb(119, 114, 113));
+    height: 3.5rem;
+    display: inline-block;
+    background-clip: text;
+}
+

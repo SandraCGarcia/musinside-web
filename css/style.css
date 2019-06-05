@@ -68,6 +68,20 @@ body {
     letter-spacing: 17.4px;
     animation: moveInRight 1s ease-out; }
 
+.heading-secundary {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: linear-gradient(to right, #FF4B2B, #777271);
+  height: 3.5rem;
+  display: inline-block;
+  background-clip: text; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
